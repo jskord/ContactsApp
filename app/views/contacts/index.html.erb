@@ -2,5 +2,7 @@
 
 <% @contacts.each do |contact| %>
   <h2> <a href= '/contacts/<%= contact.id %>'> <%= contact.full_name %></a></h2>
+  <p> Middle Name: <%= contact.middle_name %></p>
+  <p> Bio: <%= contact.bio %> </p>
   <p><%= contact.email %> </p>
 <% end %>
