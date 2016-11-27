@@ -1,4 +1,5 @@
 class Contact < ApplicationRecord
+  belongs_to :user
   def friendly_created_at
     created_at.strftime("%m/%d/%Y")
   end
